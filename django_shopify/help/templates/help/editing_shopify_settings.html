@@ -1,0 +1,19 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Editing Your shopify_settings.py" %}{% endblock %}
+
+{% block body_class %}docs{% endblock %}
+
+{% block body %}
+    <h1>Editing Your shopify_settings.py</h1>
+    <p>Next up you have to put the API Key and Shared Key Values into
+    the shopify_settings.py file.</p>
+    <ol>
+        <li>Open shopify_settings.py in the root of your Django repository.</li>
+        <li>Copy the API Key and Shared Key values as SHOPIFY_API_KEY 
+        and SHOPIFY_API_SECRET. If you know what permission scope you
+        need you can edit that as well.</li>
+    </ol>
+{% endblock %}

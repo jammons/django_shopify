@@ -1,0 +1,19 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Starting An App" %}{% endblock %}
+
+{% block body_class %}docs{% endblock %}
+
+{% block body %}
+    <h1>Starting a Shopify App</h1>
+    <p>The first thing you're going to need to do to get this Django app
+    running is to create an app on Shopify. This is fairly simple:</p>
+    <ol>
+        <li>Create an account on <a href='https://app.shopify.com/services/partners/auth/login'>app.shopify.com</a></li>
+        <li>Create an app and enter http://localhost:8000 for the application URL.</li>
+        <li>Copy your API Key and Shared Secret into the shopify_settings.py file. (You have to click "show secret" to see it.</li>
+    </ol>
+    <a href="{% url editing_shopify_settings %}">Next</a>
+{% endblock %}
