@@ -20,13 +20,14 @@
     <p>
     {% url starting_an_app as starting_an_app_url %}
     {% url editing_shopify_settings as edit_settings_url %}
+    {% url shopify_login as shopify_login %}
     {% blocktrans %}
         To get started check out the docs:
         <ol>
             <li><a href="{{ starting_an_app_url }}">Starting a Shopify App</a></li>
             <li><a href="{{ edit_settings_url }}">Editing your settings file</a></li>
-            <li><a href='{{ https://app.shopify.com/services/partners/api_clients/test_shops }}'</a>Create a Shopify Test Shop</a></li>
-            <li>Authenticate Your Site</li>
+            <li><a href='https://app.shopify.com/services/partners/api_clients/test_shops'</a>Create a Shopify Test Shop</a></li>
+        <li><a href="{{ shopify_login }}">Authenticate Your Site</a></li>
         {% endblocktrans %}
     </p>
     

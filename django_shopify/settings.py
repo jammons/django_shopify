@@ -98,6 +98,8 @@ TEMPLATE_CONTEXT_PROCESSORS = [
     "django.contrib.messages.context_processors.messages",
     "pinax_utils.context_processors.settings",
     "account.context_processors.account",
+    "django_shopify.shopify_app.context_processors.current_shop",
+
 ]
 
 
@@ -107,6 +109,8 @@ MIDDLEWARE_CLASSES = [
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
+    # My Project
+    "django_shopify.shopify_app.middleware.LoginProtection",
 ]
 
 ROOT_URLCONF = "django_shopify.urls"
@@ -137,7 +141,8 @@ INSTALLED_APPS = [
     "metron",
     
     # project
-    'django_shopify.help'
+    'django_shopify.help',
+    'django_shopify.shopify_app',
 ]
 
 # A sample logging configuration. The only tangible logging
