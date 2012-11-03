@@ -14,8 +14,8 @@ To Use:
 Setup:
 --------
 
-    1. Create an account on [app.shopify.com](https://app.shopify.com/services/partners/auth/login)
-    1. Create an app and enter http://localhost:8000 for the application URL.
-    1. Open shopify_settings.py in your Django project directory.
-    1. Copy the API Key and Shared Key values as SHOPIFY_API_KEY and SHOPIFY_API_SECRET. If you know what permission scope you need you can edit that as well.
-    1. Run ./manage.py runserver
+1. Create an account on [app.shopify.com](https://app.shopify.com/services/partners/auth/login)
+1. Create an app and enter http://localhost:8000 for the application URL.
+1. Open shopify_settings.py in your Django project directory.
+1. Copy the API Key and Shared Key values as SHOPIFY_API_KEY and SHOPIFY_API_SECRET. If you know what permission scope you need you can edit that as well.
+1. Run ./manage.py runserver
