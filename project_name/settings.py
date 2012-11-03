@@ -141,7 +141,6 @@ INSTALLED_APPS = [
     "metron",
     
     # project
-    '{{ project_name }}.help',
     '{{ project_name }}.shopify_app',
 ]
 

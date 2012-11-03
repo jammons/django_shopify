@@ -15,7 +15,6 @@ urlpatterns = patterns("",
     url(r"^admin/", include(admin.site.urls)),
     url(r"^login/", include({{ project_name }}.shopify_app.urls)),
     url(r"^account/", include("account.urls")),
-    url(r"^help/", include("{{ project_name }}.help.urls")),
 )
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
