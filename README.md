@@ -4,6 +4,7 @@ Django Shopify
 This project should give you a good start towards developing a shopify app in Django. It's still under development. The goal is to have it provide a pinax bootstrap starter layer on top of Shopify's django implementation.
 
 To Use:
+--------
 
     $ mkdir [your_project_dir]
     $ cd !$
@@ -11,6 +12,8 @@ To Use:
 
 
 Setup:
+--------
+
     1. Create an account on [app.shopify.com](https://app.shopify.com/services/partners/auth/login)
     1. Create an app and enter http://localhost:8000 for the application URL.
     1. Open shopify_settings.py in your Django project directory.
