@@ -4,7 +4,7 @@ from django.core.urlresolvers import reverse
 from django.conf import settings
 import shopify
 
-from django_shopify.shopify_app.forms import ShopLoginForm
+from {{ project_name }}.shopify_app.forms import ShopLoginForm
 
 def _return_address(request):
     return request.session.get('return_to') or reverse('home')

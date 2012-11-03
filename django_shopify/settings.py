@@ -1,6 +1,6 @@
 import os
 
-from django_shopify.shopify_settings import *
+from {{ project_name }}.shopify_settings import *
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 PACKAGE_ROOT = os.path.abspath(os.path.dirname(__file__))
@@ -79,7 +79,7 @@ STATICFILES_FINDERS = [
 ]
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = "dn*ap(76dwfm9w6x)gl^)j4a0*n@&amp;=&amp;h7zlhgjzhr@nx#*#kve"
+SECRET_KEY = "{{ secret_key }}"
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = [
@@ -98,7 +98,7 @@ TEMPLATE_CONTEXT_PROCESSORS = [
     "django.contrib.messages.context_processors.messages",
     "pinax_utils.context_processors.settings",
     "account.context_processors.account",
-    "django_shopify.shopify_app.context_processors.current_shop",
+    "{{ project_name }}.shopify_app.context_processors.current_shop",
 
 ]
 
@@ -110,13 +110,13 @@ MIDDLEWARE_CLASSES = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     # My Project
-    "django_shopify.shopify_app.middleware.LoginProtection",
+    "{{ project_name }}.shopify_app.middleware.LoginProtection",
 ]
 
-ROOT_URLCONF = "django_shopify.urls"
+ROOT_URLCONF = "{{ project_name }}.urls"
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = "django_shopify.wsgi.application"
+WSGI_APPLICATION = "{{ project_name }}.wsgi.application"
 
 TEMPLATE_DIRS = [
     os.path.join(PACKAGE_ROOT, "templates"),
@@ -141,8 +141,8 @@ INSTALLED_APPS = [
     "metron",
     
     # project
-    'django_shopify.help',
-    'django_shopify.shopify_app',
+    '{{ project_name }}.help',
+    '{{ project_name }}.shopify_app',
 ]
 
 # A sample logging configuration. The only tangible logging

@@ -1,9 +1,13 @@
-pinax-project-account
+Django Shopify
 =====================
 
-a starter project the incorporates account features from django-user-accounts
-
+This project should give you a good start towards developing a shopify app in Django. It's still under development. The goal is to have it provide a pinax bootstrap starter layer on top of Shopify's django implementation.
 
 To Use::
+    $ mkdir [your_project_dir]
+    $ cd !$
+    $ django-admin.py startproject test_pro --template=https://github.com/jammons/django_shopify/zipball/master .
 
-    $ django-admin.py startproject [your_project_name] --template=https://github.com/pinax/pinax-project-account/zipball/master .
+
+Setup::
+    Get your API keys.
